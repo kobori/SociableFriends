@@ -1,0 +1,29 @@
+<template name="timeline">
+
+  <div class="row">
+    <fieldset class="col-md-12" style="padding: 1px;">
+      <legend style="padding-left: 30px;">últimos posts</legend>
+      {{#each posts}}
+        <div class="card"> 
+          <div class="card-header">
+            <small style="font-size: 1.5em;">Autor:
+              <a href="/user/{{userId}}">{{name}}</a>
+            </small> 
+          </div>
+          <div class="card-body">      
+            <p> {{message}}</p>          
+            <div class="float-right">
+              <a href="#" id="excluir" style="color: #17a2b8"> <i class="fa fa-trash-o fa-2x" aria-hidden="true"></i> </a>
+            </div>
+          </div>             
+        </div> <br>
+      {{else}}
+        
+        <p class="lead text-center">
+          Nenhum post publicado.
+        </p>
+      {{/each}}  
+    </fieldset>
+  </div>
+
+</template>

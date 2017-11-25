@@ -1,0 +1,20 @@
+<template name="home">
+  
+  {{#if currentUser}}
+	  <div class="row">
+	    <div class="col-md-12" style="padding: 5%;">
+	      {{> profile}}
+	    </div><br>
+
+	    <div class="col-md-12">
+	      {{> post}} <br>
+	      {{> timeline}}
+	    </div> 
+	  </div> 
+	{{else}}  
+	  <div class="text-center" style="margin-top: 30%;">
+	  	<h1>SociableFriends</h1>
+	  	<h3>Não esta logado? Clique em "Sign In/Up".</h3>
+	  </div> 
+  {{/if}}
+</template>

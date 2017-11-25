@@ -1,0 +1,24 @@
+<template name="user">
+
+  {{#if user}}
+    <div class="text-center"><br>
+      {{#with user.profile}}
+        <h1><i class="fa fa-user-circle-o fa-2x" aria-hidden="true" style="color: #03a9f4"></i> {{name}}</h1>
+        <p>{{about}}</p>
+      {{/with}}
+    </div> 
+    <div> 
+      {{> friendship}}
+      {{> followButton}}
+    </div> <hr>
+    <div class="row justify-content-md-center">
+      <div class="col-md-12">
+        {{> timeline}}
+      </div>
+    </div>  
+  {{else}}
+    <h1>Usuário não identificado.</h1>
+  
+  {{/if}}
+
+</template>

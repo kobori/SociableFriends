@@ -1,0 +1,39 @@
+body {
+  background-color: #fff;
+}
+.starter-template { text-align: center; }
+
+.dropdown-menu{ width: 480px; }
+
+li{ list-style-type: none; }
+
+@media (max-width: 991px) { 
+
+  p{ font-size: 2.2em; }
+
+  legend{ font-size: 2.5em; }
+
+  h1{ font-size: 3.5em }
+
+  h1,h2,p,legend{ color: #4e4e4e; }
+
+  .dropdown-menu{ width: 900px; font-size: 1em; }
+
+  #login-email, 
+  #login-name,
+  #login-password, 
+  #login-buttons-password, 
+  #back-to-login-link,
+  #login-buttons-forgot-password,
+  #login-buttons-open-change-password,
+  #login-buttons-logout, 
+  #nome,
+  #perfil,
+  #btn-salvar,
+  #forgot-password-email{ font-size: 1.2em; }
+  
+  #formFont{ font-size: 1.8em; }
+
+  
+
+}
