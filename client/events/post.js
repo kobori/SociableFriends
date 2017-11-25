@@ -15,6 +15,5 @@ Template.post.events({
 
     console.log(texto)
     post.val('')
-    post.focus();
   }
 });
