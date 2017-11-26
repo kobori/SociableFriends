@@ -9,11 +9,12 @@ li{ list-style-type: none; }
 
 @media (max-width: 991px) { 
 
-  p{ font-size: 2.2em; }
+  p{ font-size: 3em; }
 
   legend{ font-size: 2.5em; }
 
   h1{ font-size: 3.5em }
+  h2{ font-size: 2.8em; }
 
   h1,h2,p,legend{ color: #4e4e4e; }
 
@@ -30,10 +31,11 @@ li{ list-style-type: none; }
   #nome,
   #perfil,
   #btn-salvar,
-  #forgot-password-email{ font-size: 1.2em; }
+  #forgot-password-email{ font-size: 1.5em; }
   
   #formFont{ font-size: 1.8em; }
 
+  .navbar-toggler{ padding: 3%; }
   
 
 }
